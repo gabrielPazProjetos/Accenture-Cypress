@@ -49,6 +49,13 @@
   
 ---
 
+# Coisas que percebi ao fazer o projeto
+- Mesmo adicionando um mocha por 8 e aceitando a promoção do mocha por 4, caso remova o mocha por 8, o mocha promocional continua no carrinho. Isso não deveria acontecer, pois é uma promoção que precisa conter no mínimo 3 cafés diferentes além do mocha promocional.
+O mocha promocional e o mocha normal têm data-test diferente. Se não estiverem bem organizados, na hora em que o teste de cálculo de preço ou de adicionar café for iniciado, há chance de ocorrer erro caso o mocha promocional seja removido do carrinho. (Deixei o botão de remover aleatório também, então, quando clicava para remover o mocha da promoção antes de reformular o código com o ID do mocha promocional, isso podia causar erro, tudo dependia do sorteio de qual café seria removido. Porém, consegui resolver esse problema).
+- Tem dois carrinhos, o que torna possível fazer todo o fluxo apenas na página de compra.
+- O projeto pede validação de compra, porém o site não tem a opção de confirmar compra, apenas confirmar pedido por e-mail no rodapé da página de sucesso (“Thanks for your purchase. Please check your email for payment.”).
+  
+---
 ### Nota
 - Nesse site, há duas formas de acessar o carrinho:  
   - Uma clicando em **cart**  
