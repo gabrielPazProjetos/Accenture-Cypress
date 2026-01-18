@@ -1,0 +1,24 @@
+{
+  "name": "coffecartprojeto",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "coffecartprojeto",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gabriel",
+  "license": "ISC",
+  "type": "commonjs",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step-definitions/"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.2.0",
+    "cypress": "^15.8.2",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mochawesome": "^7.1.4",
+    "mochawesome-merge": "^5.1.0",
+    "mochawesome-report-generator": "^6.3.2"
+  }
+}
